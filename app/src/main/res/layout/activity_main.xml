@@ -5,20 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <SurfaceView
-        android:id="@+id/surface"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+   <android.opengl.GLSurfaceView
+       android:id="@+id/glsurfaceview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
 
-    <TextureView
-        android:id="@+id/textureView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+   <Button
+       android:text="设置动画"
+       android:id="@+id/btn_gl_surface_view_animator"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-     />
-
+   <Button
+       android:text="切换摄像头"
+       android:layout_marginLeft="110dp"
+       android:id="@+id/btn_gl_surface_view_switch"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
 </RelativeLayout>
